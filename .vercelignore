@@ -1,0 +1,6 @@
+.env
+auth/
+node_modules/
+data/messages.jsonl
+data/whatsapp-qr.png
+*.log

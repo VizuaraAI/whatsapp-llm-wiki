@@ -1,0 +1,13 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/", "destination": "/site/index.html" }
+  ],
+  "crons": [
+    {
+      "path": "/api/resources",
+      "schedule": "0 2 * * *"
+    }
+  ]
+}
+

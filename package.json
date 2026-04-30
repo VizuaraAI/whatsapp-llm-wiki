@@ -1,0 +1,31 @@
+{
+  "name": "whatsapp-llm-wiki",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "whatsapp": "node src/whatsapp-listener.js",
+    "import:whatsapp": "node src/import-whatsapp-export.js",
+    "wiki:update": "node src/wiki-updater.js",
+    "media:caption": "node src/caption-media.js",
+    "wiki:site": "node src/generate-wiki-site.js",
+    "sync": "npm run wiki:site",
+    "site": "node src/server.js",
+    "dev": "node src/whatsapp-listener.js"
+  },
+  "dependencies": {
+    "@vercel/blob": "^2.3.3",
+    "@whiskeysockets/baileys": "^6.7.16",
+    "dotenv": "^16.4.7",
+    "formidable": "^3.5.4",
+    "openai": "^4.78.1",
+    "pino": "^9.6.0",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "overrides": {
+    "libsignal": {
+      "protobufjs": "^7.5.6"
+    }
+  }
+}
